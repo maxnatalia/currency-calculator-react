@@ -1,0 +1,13 @@
+.header {
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 700;
+    background-color: #49504e;
+    border-radius: 15px;
+    padding: 5px;
+    border-style: double;
+    background-attachment: scroll;
+    color: #d6d9db;
+    margin-top: 20px;
+}
