@@ -1,8 +1,8 @@
 .form__labelText {
     display: inline-block;
-    max-width: 250px;
     width: 100%;
     margin-right: 5px;
+    max-width: 250px;
 }
 
 .form__field {
@@ -13,33 +13,8 @@
     max-width: 500px;
 }
 
-.form__field--hover:hover {
-    background-color: hsl(163, 5%, 80%);
-}
-
 .form__field--select:hover {
     background-color: hsl(163, 5%, 80%);
-}
-
-.form__button {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    background-color: #49504e;
-    border-radius: 15px;
-    padding: 10px;
-    border-style: double;
-    color: #d6d9db;
-    text-transform: uppercase;
-}
-
-.form__button:hover {
-    background-color: hsl(163, 5%, 40%);
-}
-
-.form__button:active {
-    background-color: hsl(163, 5%, 50%);
 }
 
 .form__fieldset {
