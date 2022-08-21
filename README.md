@@ -17,13 +17,13 @@ This project was bootstrapped with Create React App.
 4. Your result will be shown in the field.
 
 ## 🛠Technologies:
-- [x]HTML
-- [x]CSS
-- [x]JavaScript
-- [x]BEM convention
-- [x]ES6+features
-- [x]Create React App
-- [x]Markdown
+- [x] HTML
+- [x] CSS
+- [x] JavaScript
+- [x] BEM convention
+- [x] ES6+features
+- [x] Create React App
+- [x] Markdown
 ## 📌Available Scripts
 
 In the project directory, you can run:
