@@ -3,10 +3,10 @@ This repository shows easy currency calculator.💲
 
 This project was bootstrapped with Create React App.
 # 📑Table of contents:
-1. [👁‍🗨Demo](#👁‍🗨demo)
-2. [📌How to use?](#📌how-to-use)
-3. [🛠Technologies](#🛠technologies)
-4. [📌Available Scripts](#📌available-scripts)
+1. [👁‍🗨Demo](#demo)
+2. [📌How to use?](#how-to-use)
+3. [🛠Technologies](#technologies)
+4. [📌Available Scripts](#available-scripts)
 ## 👁‍🗨Demo:
 [Currency Calculator](https://maxnatalia.github.io/currency-calculator-react/)
 
