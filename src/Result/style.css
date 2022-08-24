@@ -8,7 +8,7 @@
     width: 100%;
     word-break: break-word;
     border-radius: 15px;
-    border-style: double;
+    border-style: none;
     background-color: #49504e;
     color: #d6d9db;
 }

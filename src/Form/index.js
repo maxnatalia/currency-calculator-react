@@ -1,7 +1,6 @@
 import "./style.css";
 import React, { useState } from "react";
 import Result from "../Result";
-import Button from "../Button";
 import { currencies } from "./currencies";
 
 const Form = () => {
@@ -60,9 +59,10 @@ const Form = () => {
                     <input className="form__field" name="date" value={date} readOnly />
                 </label>
                 <Result result={result} />
+                <button className="button">Policz teraz!</button>
             </fieldset>
-            <Button />
         </form>
     )
 };
+
 export default Form;
