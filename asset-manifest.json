@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/currency-calculator-react/static/css/main.2d601f6a.css",
-    "main.js": "/currency-calculator-react/static/js/main.df7124a3.js",
+    "main.js": "/currency-calculator-react/static/js/main.14f27bfb.js",
     "static/js/787.9929fef6.chunk.js": "/currency-calculator-react/static/js/787.9929fef6.chunk.js",
-    "static/media/money-background.png": "/currency-calculator-react/static/media/money-background.fc0619da85f39bb82bbe.png",
+    "static/media/background.png": "/currency-calculator-react/static/media/background.fc0619da85f39bb82bbe.png",
     "index.html": "/currency-calculator-react/index.html",
-    "main.2d601f6a.css.map": "/currency-calculator-react/static/css/main.2d601f6a.css.map",
-    "main.df7124a3.js.map": "/currency-calculator-react/static/js/main.df7124a3.js.map",
+    "main.14f27bfb.js.map": "/currency-calculator-react/static/js/main.14f27bfb.js.map",
     "787.9929fef6.chunk.js.map": "/currency-calculator-react/static/js/787.9929fef6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d601f6a.css",
-    "static/js/main.df7124a3.js"
+    "static/js/main.14f27bfb.js"
   ]
 }
