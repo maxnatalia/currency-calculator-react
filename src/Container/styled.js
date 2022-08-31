@@ -9,6 +9,6 @@ export const ElementParagraph = styled.div`
     background-color: #ebebeb;
     text-align: left;
     font-size: 16px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 60px;
 `;
