@@ -1,5 +1,5 @@
 import { useCurrentDate } from "./useCurrentDate.js";
-import "./style.css";
+import { ElementClock } from "./styled.js";
 
 const formatDate = (date) => {
   return date.toLocaleString(undefined, {
@@ -16,11 +16,11 @@ const Clock = () => {
   const date = useCurrentDate();
 
   return (
-    <div className="clock">
+    <ElementClock>
       Dzisiaj jest
       {" "}
       {formatDate(date)}
-    </div>
+    </ElementClock>
   );
 };
 

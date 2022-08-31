@@ -1,4 +1,6 @@
-.container__paragraph {
+import styled from "styled-components";
+
+export const ElementParagraph = styled.div`
     border-style: double;
     border-color:#49504e;
     border-radius: 15px;
@@ -9,4 +11,4 @@
     font-size: 16px;
     margin-top: 60px;
     margin-bottom: 60px;
-}
+`;

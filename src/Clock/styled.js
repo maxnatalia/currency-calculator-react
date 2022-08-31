@@ -1,4 +1,6 @@
-.clock {
+import styled from "styled-components";
+
+export const ElementClock = styled.div`
     border-style: double;
     border-color: #49504e;
     border-radius: 15px;
@@ -10,4 +12,4 @@
     display: flex;
     justify-content: right;
     font-family: 'Courier New', Courier, monospace;
-}
+`;

@@ -1,9 +1,9 @@
-import "./style.css";
+import { ElementParagraph } from "./styled";
 
 const Container = ({ title }) => (
-    <div className="container__paragraph">
+    <ElementParagraph>
         <p>{title}</p>
-    </div>
+    </ElementParagraph>
 );
 
 export default Container;

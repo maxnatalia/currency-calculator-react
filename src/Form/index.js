@@ -1,7 +1,7 @@
-import "./style.css";
 import React, { useState } from "react";
 import Result from "../Result";
 import { currencies } from "./currencies";
+import {Button, Fieldset, FormContainer, Input, InputSelect, Legend, Title} from "./styled";
 
 const Form = () => {
 
@@ -24,14 +24,12 @@ const Form = () => {
         });
     };
     return (
-        <form onSubmit={onFormSubmit} className="form">
-            <fieldset className="form__fieldset">
-                <legend className="form__legend">Kalkulator walutowy</legend>
-                <label><span className="form__labelText">Kwota w PLN*:</span>
-                    <input
-                        value={amount}
+        <FormContainer onSubmit={onFormSubmit}>
+            <Fieldset>
+                <Legend>Kalkulator walutowy</Legend>
+                <label><Title>Kwota w PLN*:</Title>
+                    <Input
                         onChange={({ target }) => setAmount(target.value)}
-                        className="form__field"
                         type="number"
                         step="0.01"
                         min="0"
@@ -39,9 +37,8 @@ const Form = () => {
                         required
                         placeholder="wpisz kwotę w PLN" />
                 </label>
-                <label><span className="form__labelText">Wybierz walutę*:</span>
-                    <select
-                        className="form__field form__field--select"
+                <label><Title>Wybierz walutę*:</Title>
+                    <InputSelect
                         name="currency"
                         required
                         value={currency}
@@ -52,16 +49,16 @@ const Form = () => {
                                 {currency.name}
                             </option>
                         ))};
-                    </select>
+                    </InputSelect>
                 </label>
                 <label>
-                    <span className="form__labelText">Data pobrania kursu:</span>
-                    <input className="form__field" name="date" value={date} readOnly />
+                    <Title>Data pobrania kursu:</Title>
+                    <Input name="date" value={date} readOnly />
                 </label>
                 <Result result={result} />
-                <button className="button">Policz teraz!</button>
-            </fieldset>
-        </form>
+                <Button>Policz teraz!</Button>
+            </Fieldset>
+        </FormContainer>
     )
 };
 

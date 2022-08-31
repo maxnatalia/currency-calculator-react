@@ -1,7 +1,7 @@
-import "./style.css";
+import { Paragraph } from "./styled";
 
 const Result = ({ result }) => (
-  <p className="result">Kwota po przeliczeniu:&nbsp;<br />
+  <Paragraph>Kwota po przeliczeniu:&nbsp;<br />
     {result !== undefined && (
       <>
         <strong>
@@ -10,7 +10,7 @@ const Result = ({ result }) => (
         </strong>
       </>
     )}
-  </p>
+  </Paragraph>
 );
 
 export default Result;
