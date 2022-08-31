@@ -11,6 +11,6 @@ export const Paragraph = styled.p`
     word-break: break-word;
     border-radius: 15px;
     border-style: none;
-    background-color: #49504e;
-    color: #d6d9db;
+    background-color: ${({ theme }) => theme.color.darkGreen};
+    color: ${({ theme }) => theme.color.lightGreen};
 `;
