@@ -87,9 +87,11 @@ const Form = () => {
                     </label>
                     <label>
                         <Title>Aktualny kurs waluty {externalCurrency}:</Title>
-                        <Input name="rate" value={(1/rates[externalCurrency]).toFixed(2)+" PLN"} readOnly />
+                        <Input name="rate" value={(1 / rates[externalCurrency]).toFixed(2) + " PLN"} readOnly />
                         <Paragraph>Kursy walut zostały pobrane z {" "}
-                            <StyledLink as="a" href="https://exchangerate.host/" target="_blank" rel="noopener noreferrer">exchangerate.host</StyledLink>
+                            <StyledLink as="a" href="https://exchangerate.host/" target="_blank" rel="noopener noreferrer">
+                                exchangerate.host
+                            </StyledLink>
                         </Paragraph>
                     </label>
                     <Result result={result} />
