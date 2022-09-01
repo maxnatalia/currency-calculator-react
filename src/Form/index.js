@@ -35,6 +35,7 @@ const Form = () => {
                         min="0"
                         name="amount"
                         required
+                        autoFocus
                         placeholder="wpisz kwotę w PLN" />
                 </label>
                 <label><Title>Wybierz walutę*:</Title>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ElementClock = styled.div`
+export const StyledClock = styled.div`
     border-style: double;
     border-color: ${({ theme }) => theme.color.darkGreen};
     border-radius: 15px;
