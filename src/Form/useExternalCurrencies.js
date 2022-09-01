@@ -12,7 +12,7 @@ export const useExternalCurrencies = () => {
     const [date, setDate] = useState();
     const [status, setStatus] = useState(statusRequest.pending);
 
-    const src = "https://mmmapi.exchangerate.host/latest?base=PLN";
+    const src = "https://api.exchangerate.host/latest?base=PLN";
 
     useEffect(() => {
         const getData = async () => {
