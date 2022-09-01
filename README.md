@@ -12,12 +12,14 @@ This project was bootstrapped with Create React App.
 [Currency Calculator](https://maxnatalia.github.io/currency-calculator-react/)
 
 ## 👁‍🗨Website preview
-![web-preview.jpg](https://i.postimg.cc/9M8LPybZ/web-preview.jpg)
+![currency-calculator.jpg](https://i.postimg.cc/7LwCX2g9/currency-calculator.jpg)
 ## 📌How to use?
 1. Tap amount in (PLN).
-2. Choose currency (EUR, USD, CHF).
+2. Choose currency.
 3. Click the button "POLICZ TERAZ!".
 4. Your result will be shown in the field.
+
+You can also see what is the current exchange rate. 
 
 ## 🛠Technologies
 - [x] HTML
@@ -27,6 +29,9 @@ This project was bootstrapped with Create React App.
 - [x] Create React App
 - [x] Markdown
 - [x] Styled-Components
+- [x] React Hooks
+- [x] Custom Hooks
+- [x] Axios
 ## 📌Available Scripts
 
 In the project directory, you can run:
