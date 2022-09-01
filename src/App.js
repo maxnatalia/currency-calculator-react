@@ -1,11 +1,13 @@
 import Clock from "./Clock";
 import Container from "./Container";
 import Form from "./Form";
+import Header from "./Header";
 
-function App() { 
+function App() {
   return (
     <>
-      <Clock/>
+      <Clock />
+      <Header title="Kalkulator walutowy"></Header>
       <Form />
       <Container title="Pola oznaczone * są wymagane." />
     </>

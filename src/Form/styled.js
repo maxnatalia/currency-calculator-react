@@ -14,17 +14,6 @@ export const Fieldset = styled.fieldset`
     border-style: none;
 `;
 
-export const Legend = styled.legend`
-    border-radius: 15px;
-    border-style: double;
-    padding: 20px;
-    background-color: ${({ theme }) => theme.color.darkGreen};
-    font-size: 30px;
-    font-weight: 700;
-    color: ${({ theme }) => theme.color.lightGreen};
-    text-align: center;
-`;
-
 export const Title = styled.span`
     display: inline-block;
     width: 100%;
@@ -77,5 +66,49 @@ export const Button = styled.button`
 
     &:active {
         filter: brightness(130%);
+    }
+`;
+
+export const Paragraph = styled.p`
+    text-align: center;
+    font-size: 18px;
+`;
+
+export const Loader = styled.div`
+    max-width: 1000px;
+    padding: 60px 40px;
+    margin: 20px auto;
+    border-style: double;
+    border-color: ${({ theme }) => theme.color.darkGreen};
+    border-radius: 15px;
+    background-color: ${({ theme }) => theme.color.lightGreen};
+    display: flex;
+    justify-content: center;
+`;
+
+export const ElementLoader = styled.div`
+    border: 10px solid ${({ theme }) => theme.color.darkGreen};
+    border-top: 10px solid ${({ theme }) => theme.color.lightGreen};
+    border-radius: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    animation: spin 2s linear infinite;
+
+    @keyframes spin {
+        from { 
+            transform: rotate(0deg); 
+        }
+        to { 
+            transform: rotate(360deg); 
+        }
+    }
+`;
+
+export const StyledLink = styled.span`
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.darkGreen};
+
+    &:hover {
+        filter: brightness(120%);
     }
 `;

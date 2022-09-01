@@ -4,7 +4,7 @@ export const StyledClock = styled.div`
     border-style: double;
     border-color: ${({ theme }) => theme.color.darkGreen};
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     font-weight: 400;
     background-color: ${({ theme }) => theme.color.lightGreen};
     font-size: 18px;

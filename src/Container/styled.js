@@ -7,8 +7,8 @@ export const ElementParagraph = styled.div`
     padding-left: 20px;
     font-weight: 400;
     background-color: ${({ theme }) => theme.color.lightGreen};
-    text-align: left;
     font-size: 16px;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
 `;
