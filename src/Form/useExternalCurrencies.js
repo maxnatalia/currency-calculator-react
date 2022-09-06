@@ -26,7 +26,7 @@ export const useExternalCurrencies = () => {
                 console.error("Something bad happened!", error);
             }
         };
-        setTimeout(getData, 5000);
+        setTimeout(getData, 3000);
     }); 
 
     return { rates, date, status, statusRequest };

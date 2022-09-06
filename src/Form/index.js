@@ -39,13 +39,11 @@ const Form = () => {
                 </Loader>
             </>
         )
-    } else if (status === statusRequest.error) {
+    } if (status === statusRequest.error) {
         return (
-            <>
                 <Loader>
                     <Paragraph>Coś poszło nie tak...spróbuj za chwilę⌚</Paragraph>
                 </Loader>
-            </>
         )
     }
     return (
@@ -87,7 +85,7 @@ const Form = () => {
                     </label>
                     <label>
                         <Title>Aktualny kurs waluty {externalCurrency}:</Title>
-                        <Input name="rate" value={(1 / rates[externalCurrency]).toFixed(2) + " PLN"} readOnly />
+                        <Input name="rate" value={(1 / rates[externalCurrency]).toFixed(5) + " PLN"} readOnly />
                         <Paragraph>Kursy walut zostały pobrane z {" "}
                             <StyledLink as="a" href="https://exchangerate.host/" target="_blank" rel="noopener noreferrer">
                                 exchangerate.host
