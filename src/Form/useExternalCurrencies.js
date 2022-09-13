@@ -17,7 +17,7 @@ export const useExternalCurrencies = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get(src);
+                const response = await axios.get(src); 
                 setDate(response.data.date);
                 setRates(response.data.rates);
                 setStatus(() => statusRequest.success);
@@ -27,7 +27,8 @@ export const useExternalCurrencies = () => {
             }
         };
         setTimeout(getData, 3000);
-    }); 
+    });
 
     return { rates, date, status, statusRequest };
 };
+

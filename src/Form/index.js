@@ -2,13 +2,23 @@ import React, { useState } from "react";
 import Result from "./Result";
 import { Button, Fieldset, FormContainer, Input, InputSelect, Title, Paragraph, ElementLoader, Loader, StyledLink } from "./styled";
 import { useExternalCurrencies } from "./useExternalCurrencies";
+import { useCurrentDate } from "../Clock/useCurrentDate";
 
 const Form = () => {
+    const date = useCurrentDate();
+    const formatActualDate = (date) => {
+        return date.toLocaleString(undefined, {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+        });
+    };
 
     const [externalCurrency, setExternalCurrency] = useState("PLN");
     const [amount, setAmount] = useState("");
     const [result, setResult] = useState();
-    const { rates, date, status, statusRequest } = useExternalCurrencies();
+    const { rates, status } = useExternalCurrencies();
 
     const amountChange = ({ target }) => setAmount(target.value);
     const externalCurrencyChange = ({ target }) => setExternalCurrency(target.value);
@@ -28,7 +38,7 @@ const Form = () => {
         calculateResult(externalCurrency, amount);
     };
 
-    if (status === statusRequest.pending) {
+    if (status === "pending") {
         return (
             <>
                 <Loader>
@@ -39,11 +49,11 @@ const Form = () => {
                 </Loader>
             </>
         )
-    } if (status === statusRequest.error) {
+    } if (status === "error") {
         return (
-                <Loader>
-                    <Paragraph>Coś poszło nie tak...spróbuj za chwilę⌚</Paragraph>
-                </Loader>
+            <Loader>
+                <Paragraph>Coś poszło nie tak...spróbuj za chwilę⌚</Paragraph>
+            </Loader>
         )
     }
     return (
@@ -81,7 +91,7 @@ const Form = () => {
                     </label>
                     <label>
                         <Title>Data pobrania kursu:</Title>
-                        <Input name="date" value={date} readOnly />
+                        <Input name="date" value={formatActualDate(date)} readOnly />
                     </label>
                     <label>
                         <Title>Aktualny kurs waluty {externalCurrency}:</Title>
