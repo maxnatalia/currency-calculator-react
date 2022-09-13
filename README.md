@@ -12,7 +12,7 @@ This project was bootstrapped with Create React App.
 [Currency Calculator](https://maxnatalia.github.io/currency-calculator-react/)
 
 ## 👁‍🗨Website preview
-![web-Preview-Calculator.jpg](https://i.postimg.cc/CKMHJrQr/web-Preview-Calculator.jpg)
+![currency-calculator.jpg](https://i.postimg.cc/nVsF7SX3/currency-calculator.jpg)
 ## 📌How to use?
 1. Tap amount in (PLN).
 2. Choose currency.
