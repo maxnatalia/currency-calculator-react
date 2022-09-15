@@ -12,12 +12,12 @@ export const useExternalCurrencies = () => {
     const [date, setDate] = useState();
     const [status, setStatus] = useState(statusRequest.pending);
 
-    const src = "https://api.exchangerate.host/latest?base=PLN";
+    const src = `https://api.exchangerate.host/latest?base=PLN&${+ new Date()}`;
 
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get(src); 
+                const response = await axios.get(src);
                 setDate(response.data.date);
                 setRates(response.data.rates);
                 setStatus(() => statusRequest.success);
