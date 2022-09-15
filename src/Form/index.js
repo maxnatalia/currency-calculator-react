@@ -2,23 +2,13 @@ import React, { useState } from "react";
 import Result from "./Result";
 import { Button, Fieldset, FormContainer, Input, InputSelect, Title, Paragraph, ElementLoader, Loader, StyledLink } from "./styled";
 import { useExternalCurrencies } from "./useExternalCurrencies";
-import { useCurrentDate } from "../Clock/useCurrentDate";
 
 const Form = () => {
-    const date = useCurrentDate();
-    const formatActualDate = (date) => {
-        return date.toLocaleString(undefined, {
-            weekday: "long",
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-        });
-    };
-
+    
     const [externalCurrency, setExternalCurrency] = useState("PLN");
     const [amount, setAmount] = useState("");
     const [result, setResult] = useState();
-    const { rates, status } = useExternalCurrencies();
+    const { rates, status, date } = useExternalCurrencies();
 
     const amountChange = ({ target }) => setAmount(target.value);
     const externalCurrencyChange = ({ target }) => setExternalCurrency(target.value);
@@ -91,7 +81,7 @@ const Form = () => {
                     </label>
                     <label>
                         <Title>Data pobrania kursu:</Title>
-                        <Input name="date" value={formatActualDate(date)} readOnly />
+                        <Input name="date" value={date} readOnly />
                     </label>
                     <label>
                         <Title>Aktualny kurs waluty {externalCurrency}:</Title>
