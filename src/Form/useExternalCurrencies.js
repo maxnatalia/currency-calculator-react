@@ -27,7 +27,7 @@ export const useExternalCurrencies = () => {
             }
         };
         setTimeout(getData, 3000);
-    });
+    }, []);
 
     return { rates, date, status, statusRequest };
 };
